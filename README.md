@@ -16,6 +16,7 @@ Here is the core focus of the analysis:
 
 ## 🗄️ Database Schema & Architecture
 The structural design employs an Entity-Relationship (ER) Diagram to explicitly map out the direct relationships and relational joins between core fact and dimension tables.
+![image alt](https://github.com/fahim-bd-24/UrbanCart-Data-Analytics-Project-Assignment/blob/99af42fd244d5d3648f481f0cc28a6ecf45c746e/ER%20Diagram-Urban.JPG)
 
 ---
 
