@@ -1,134 +1,84 @@
 # UrbanCart Data Analytics Project
 
-## Project Overview
-UrbanCart is an online retail company that collects customer, product, order, and payment transaction data.
+> **Executive Summary:** UrbanCart is an online retail company that collects customer, product, order, and payment transaction data. This project analyzes UrbanCart's business data using PostgreSQL SQL to understand sales performance, customer behavior, product performance, inventory status, and payment trends. The objective of this analysis is to convert raw transactional data into meaningful business insights that help management make data-driven decisions.
 
-This project analyzes UrbanCart's business data using PostgreSQL SQL to understand sales performance, customer behavior, product performance, inventory status, and payment trends.
+---
 
-The objective of this analysis is to convert raw transactional data into meaningful business insights that help management make data-driven decisions.
+## 🎯 Project Objectives
+Here is the core focus of the analysis:
+* ***Sales Performance:*** Analyzing overall revenue trajectories.
+* ***Customer Behavior:*** Understanding target user trends and purchasing cycles.
+* ***Product Intelligence:*** Identifying high-velocity and top-performing products.
+* ***Risk Mitigation:*** Analyzing cancellation trends and supply factors.
+* ***Strategic Growth:*** Generating core business insights for stakeholders.
 
+---
 
-## Objectives
-- Analyze sales performance
-- Understand customer behavior
-- Identify top products
-- Analyze cancellation trends
-- Generate business insights
+## 🗄️ Database Schema & Architecture
+The structural design employs an Entity-Relationship (ER) Diagram to explicitly map out the direct relationships and relational joins between core fact and dimension tables.
 
-## Database Schema
-ER Diagram shows the relationship between fact and dimension tables.
+---
 
-# Business Questions Addressed
+## ❓ Business Questions Addressed (Q1–Q25)
 
-This project answers 25 business questions including:
+| Category | Focus Metrics |
+| :--- | :--- |
+| **🛍️ Order Analysis** | • Total number of orders<br>• Monthly order trends<br>• Cancellation analysis<br>• Customer order activity |
+| **📈 Sales & Product Analysis** | • Total revenue calculation<br>• City-wise sales performance<br>• Category revenue contribution<br>• Top revenue generating products<br>• Average order value<br>• Basket size analysis<br>• Inventory risk analysis |
+| **👥 Customer Analysis** | • Gmail customer percentage<br>• Top revenue generating customers<br>• Customer purchasing behavior<br>• Gender based purchasing pattern |
+| **💳 Payment Analysis** | • Most used payment methods<br>• Payment method vs order status<br>• City payment preferences<br>• Payment behavior analysis |
+| **🔗 Product Relationship** | • Frequently purchased product pairs<br>• Product bundle revenue analysis |
 
-## Order Analysis
+---
 
-- Total number of orders
-- Monthly order trends
-- Cancellation analysis
-- Customer order activity
+## 🛠️ Analysis Performed
+The following deep-dives were executed inside the PostgreSQL environment:
+* **Revenue analysis:** Evaluating business sales volume and channel value.
+* **Customer segmentation analysis:** Isolating high-value user clusters.
+* **Product performance analysis:** Auditing individual product metrics.
+* **Inventory analysis:** Pinpointing low safety-stock thresholds.
+* **Payment behavior analysis:** Mapping gateway success rates and cart correlations.
+* **Daily business reporting:** Constructing daily system updates.
 
+---
 
-## Sales & Product Analysis
+## 💡 Key Insights & Findings
 
-- Total revenue calculation
-- City-wise sales performance
-- Category revenue contribution
-- Top revenue generating products
-- Average order value
-- Basket size analysis
-- Inventory risk analysis
+### 💰 Sales Insights
+* Certain product categories contribute a major portion of total revenue.
+* High performing products generate significant sales volume.
 
-## Customer Analysis
+### 👥 Customer Insights
+* A small group of customers contributes a large percentage of revenue.
+* Customer purchasing patterns vary based on location and category preference.
 
-- Gmail customer percentage
-- Top revenue generating customers
-- Customer purchasing behavior
-- Gender based purchasing pattern
+### 📦 Product Insights
+* Some products have high sales volume but low inventory availability.
+* Frequently purchased products can be promoted as bundles.
 
+### 💳 Payment Insights
+* Customers show different payment preferences by location.
+* Certain payment methods are associated with higher order values.
 
-## Payment Analysis
+---
 
-- Most used payment methods
-- Payment method vs order status
-- City payment preferences
-- Payment behavior analysis
+## 🚀 Business Recommendations
 
+1. **Inventory Management**
+   > Increase stock availability for high demand products to reduce stock-out risk.
+2. **Marketing Strategy**
+   > Create targeted promotions for high value customers.
+3. **Product Bundling**
+   > Promote frequently purchased product combinations to increase sales.
+4. **Customer Retention**
+   > Develop loyalty programs for repeat customers.
+5. **Payment Optimization**
+   > Improve preferred payment methods based on customer behavior.
 
-## Product Relationship Analysis
+---
 
-- Frequently purchased product pairs
-- Product bundle revenue analysis
-
-# Analysis Performed
-
-The following analyses were performed using PostgreSQL:
-
-- Revenue analysis
-- Customer segmentation analysis
-- Product performance analysis
-- Inventory analysis
-- Payment behavior analysis
-- Daily business reporting
-
-# Key Insights & Findings
-
-
-## Sales Insights
-
-- Certain product categories contribute a major portion of total revenue.
-- High performing products generate significant sales volume.
-
-
-## Customer Insights
-
-- A small group of customers contributes a large percentage of revenue.
-- Customer purchasing patterns vary based on location and category preference.
-
-
-## Product Insights
-
-- Some products have high sales volume but low inventory availability.
-- Frequently purchased products can be promoted as bundles.
-
-
-## Payment Insights
-
-- Customers show different payment preferences by location.
-- Certain payment methods are associated with higher order values.
-
-# Business Recommendations
-
-
-Based on the analysis, the following recommendations are suggested:
-
-
-### 1. Inventory Management
-
-Increase stock availability for high demand products to reduce stock-out risk.
-
-
-### 2. Marketing Strategy
-
-Create targeted promotions for high value customers.
-
-
-### 3. Product Bundling
-
-Promote frequently purchased product combinations to increase sales.
-
-
-### 4. Customer Retention
-
-Develop loyalty programs for repeat customers.
-
-### 5. Payment Optimization
-
-Improve preferred payment methods based on customer behavior.
-
-## Tools Used
-- PostgreSQL
-- SQL
-- Excel 
-- GitHub
+## 💻 Tech Stack
+* **Database Engine:** PostgreSQL
+* **Query Language:** SQL
+* **visualization:** Excel 
+* **Hosting Platform:** GitHub
